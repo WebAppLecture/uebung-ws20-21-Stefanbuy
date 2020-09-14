@@ -81,5 +81,4 @@ export class MyMath {
         this.value = this.result;
         return this;
     }
-
 }
