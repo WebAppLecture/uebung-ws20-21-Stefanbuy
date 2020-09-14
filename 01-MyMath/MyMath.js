@@ -16,29 +16,56 @@ export class MyMath {
         // Hier referenziert es die Instanz der Klasse MyMath die wir gerade erstellen.
         // mit 'value * 1' erzwingen wir, dass value als number gelesen wird.
         this.value = value * 1; 
+        this.result;
+    }
+    //return einbauen
+    add(value2) {
+        this.result =this.value+value2; 
+    console.log(this.result);
     }
 
-    add(value) {
-
+    subtract(value2) {
+    this.result =this.value-value2; 
+    console.log(this.result);
     }
 
-    subtract(value) {
-
+    multiply(value2) {
+        this.result =this.value*value2; 
+        console.log(this.result);
     }
 
-    multiply(value) {
-
+    divide(value2) {
+        if(value2 === 0){
+            this.result =this.value; 
+        }else{
+            this.result =this.value/value2; 
+        }
+        
+        console.log(this.result);
     }
 
-    divide(value) {
-
-    }
-
-    pow(value) {
-
+    pow(value2) {
+        if(value2<0){console.log("no negatives");}else{
+            this.result = this.value;
+            for(let i = 1;i<value2;i++){
+                this.result = this.result * this.result;
+            }
+            console.log(this.result);
+        }
     }
 
     faculty() {
-
+        //`n! = n ⋅ (n - 1) ⋅ (n - 2) ⋅ ... ⋅ 1`
+        let num = this.value;
+        
+        this.result = num;
+        while(num >1){
+            console.log("test");
+            if(num % 1 !== 0){break;}
+            console.log(num);
+            num =num-1;
+            this.result = this.result * num;
+        }
+        console.log(this.result);
     }
 }

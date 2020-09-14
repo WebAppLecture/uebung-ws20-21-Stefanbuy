@@ -23,7 +23,7 @@ Ihr könnt auch schon Methoden auf dieser Instanz aufrufen, die allerdings noch 
 * Im Konstruktor von MyMath, wird der übergeben Wert in `this.value` gespeichert
 * Sorgt dafür dass `this.value`, falls kein Wert übergeben wird, auf `0` gesetzt wird.
 
-## 02. Grundrechenarten ##
+## 02. Grundrechenarten ##let myMath = new MYMath(5)
 
 Implementiere die Grundrechenarten: `add()`, `subtract()`, `multiply()`, `divide()`
 
