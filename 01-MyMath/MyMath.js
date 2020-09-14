@@ -15,23 +15,30 @@ export class MyMath {
         // 'this' referenziert den Kontext in dem die aktuelle Funktion aufgerufen wird. 
         // Hier referenziert es die Instanz der Klasse MyMath die wir gerade erstellen.
         // mit 'value * 1' erzwingen wir, dass value als number gelesen wird.
-        this.value = value * 1; 
+        if(value === undefined){
+            this.value = 0;
+        }else{this.value = value * 1;}
         this.result;
     }
     //return einbauen
     add(value2) {
-        this.result =this.value+value2; 
-    console.log(this.result);
+        this.result =this.value+value2;
+        this.value = this.result; 
+    return this;
     }
 
     subtract(value2) {
     this.result =this.value-value2; 
-    console.log(this.result);
+    //console.log(this.result);
+    this.value = this.result; 
+    return this;
     }
 
     multiply(value2) {
         this.result =this.value*value2; 
-        console.log(this.result);
+    //    console.log(this.result);
+    this.value = this.result; 
+    return this;
     }
 
     divide(value2) {
@@ -41,7 +48,9 @@ export class MyMath {
             this.result =this.value/value2; 
         }
         
-        console.log(this.result);
+        //console.log(this.result);
+        this.value = this.result; 
+        return this;
     }
 
     pow(value2) {
@@ -50,8 +59,10 @@ export class MyMath {
             for(let i = 1;i<value2;i++){
                 this.result = this.result * this.result;
             }
-            console.log(this.result);
+//            console.log(this.result);
         }
+        this.value = this.result; 
+        return this;
     }
 
     faculty() {
@@ -66,6 +77,9 @@ export class MyMath {
             num =num-1;
             this.result = this.result * num;
         }
-        console.log(this.result);
+        //console.log(this.result);
+        this.value = this.result; 
+        return this;
     }
+    
 }
