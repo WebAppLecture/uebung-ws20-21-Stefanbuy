@@ -22,7 +22,7 @@ body {
 .gameBox {
     position: relative;
     height: calc(100vh - 16px);
-    width: fit-content;
+    width: max-content;
 }
 
 .logo {

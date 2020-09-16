@@ -1,0 +1,200 @@
+
+body {
+    overflow: hidden;
+    background: radial-gradient(ellipse at left top, #f7ee76 0%,#645097 70%);
+}
+.logo{
+    font-family: Impact, Charcoal, sans-serif;
+    font-style: italic;
+}
+.gameBox {
+    background-color: #645097;
+    
+    border-radius: 10vh 10vh 5vh 5vh ;
+    border:2vh #524377 solid;
+    border-top-color: #8c73cc;
+    border-left-color: #8c73cc;
+    box-shadow: 10px 10px 8px #42365f;
+}
+/*
+.gameBox,
+.logo,
+.controls,
+.controls > *,
+.skin-change > div {
+    border: .2vh dashed black;
+}*/
+
+.controls > * {
+    background-color: #06917E;
+    font-size: 3vh;
+    color: #086458;
+    text-align: center;
+    
+}
+#primary{
+    border: 0.4vh #087567 solid;
+    border-top-color: #0eb19b;
+    border-left-color: #0eb19b; 
+    position: absolute;
+    right: 20vh;
+    box-shadow: 00px 0px 0px 0.6vh #42365f;
+
+}
+#primary:active{
+        border-color: #075e52;
+        border-top-color: #0d8a79;
+        border-left-color: #0d8a79; 
+        background-color: #068b7a; 
+    }
+#secondary{
+    background-color:  #D61B46;
+    font-size: 3vh;
+    color: #a51c3c;
+    text-align: center;
+    border: 0.4vh #a51c3c solid;
+    border-top-color: #e62854;
+    border-left-color: #e62854; 
+    box-shadow: 00px 0px 0px 0.6vh #42365f;
+    }
+#secondary:active{
+        border-color: #80152e;
+        border-top-color: #bb1f44;
+        border-left-color: #bb1f44; 
+        background-color: #cf1c46; 
+    }
+
+.previous{
+    background-color: #ACB1C4;
+    font-size: 2vh;
+    border: 0.4vh #737785 solid;
+    border-top-color: #bdc1d3;
+    border-left-color: #bdc1d3; 
+    border-radius: 3vh 1vh 1vh 3vh;
+    color: #747682;
+    text-align: left;
+    box-shadow: 00px 0px 0px 0.5vh #42365f;
+}
+.previous:active{
+    border-color: #46474d;
+    border-top-color: #737785;
+    border-left-color: #737785; 
+    background-color: #a3a8bb; 
+}
+.next{
+    background-color: #ACB1C4;
+    font-size: 2vh;
+    border: 0.4vh #737785 solid;
+    border-top-color: #bdc1d3;
+    border-left-color: #bdc1d3; 
+    border-radius: 1vh 3vh 3vh 1vh;
+    color: #747682;
+    box-shadow: 00px 0px 0px 0.5vh #42365f;
+    
+}
+
+.next:active{
+    border-color: #46474d;
+    border-top-color: #737785;
+    border-left-color: #737785; 
+    background-color: #a3a8bb; 
+}
+
+.reset{
+    background-color: #ACB1C4;
+    font-size: 3vh;
+    border-radius: 1vh 5vh 0vh 1vh ;
+    text-align: left;
+    border: 0.4vh #737785 solid;
+    border-top-color: #bdc1d3;
+    border-left-color: #bdc1d3;
+    background-clip: content-box;
+    width: 9vh;
+    right: 3vh;
+    box-shadow: 00px 0px 0px 0.6vh #42365f;
+}
+.reset:active{
+    border-color: #46474d;
+    border-top-color: #737785;
+    border-left-color: #737785; 
+    background-color: #a3a8bb; 
+}
+
+.d-pad{
+    background-color: #ACB1C4;
+    font-size: 3vh;
+}
+
+.d-pad{
+    color: #747682;
+    text-align: center;
+    font-size: 1rem;
+    height: 10vh;
+    
+}
+
+.d-pad {
+    left: 20%;
+    margin-top: 8vh;
+    width: 4.5vh;
+    height: 6vh;
+    border-radius: 3vh 3vh 1vh 1vh ;
+}
+
+.up {
+    transform: rotate(0deg) translateY(-6vh);
+    border: 0.4vh #737785 solid;
+    border-top-color: #bdc1d3;
+    border-left-color: #bdc1d3; 
+    box-shadow: 0px 0vh 0px 0.6vh #42365f;
+}
+
+.up:active{
+    border-color: #46474d;
+    border-top-color: #737785;
+    border-left-color: #737785;
+    background-color: #a3a8bb; 
+    }
+
+.right {
+    transform: rotate(90deg) translateY(-6vh);
+    border: 0.4vh #737785 solid;
+    border-bottom-color: #bdc1d3;
+    border-left-color: #bdc1d3;
+    box-shadow: 0px 0vh 0px 0.6vh #42365f;
+}
+.right:active{
+    border-color: #46474d;
+    border-bottom-color: #737785;
+    border-left-color: #737785;
+    background-color: #a3a8bb;  
+    }
+
+.down {
+    transform: rotate(180deg) translateY(-6vh);
+    border: 0.4vh #737785 solid;
+    border-bottom-color: #bdc1d3;
+    border-right-color: #bdc1d3;
+    box-shadow: 0px 0vh 0px 0.6vh #42365f;
+}
+.down:active{
+    border-color: #46474d;
+    border-bottom-color: #737785;
+    border-right-color: #737785; 
+    background-color: #a3a8bb; 
+    }
+
+.left {
+    transform: rotate(270deg) translateY(-6vh);
+    border: 0.4vh #737785 solid;
+    border-top-color: #bdc1d3;
+    border-right-color: #bdc1d3;
+    box-shadow: 0px 0vh 0px 0.6vh #42365f;
+}
+
+.left:active{
+    border-color: #46474d;
+    border-top-color: #737785;
+    border-right-color: #737785; 
+    background-color: #a3a8bb; 
+}
